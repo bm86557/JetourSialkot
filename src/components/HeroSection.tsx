@@ -35,7 +35,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative w-full h-screen p-4 md:p-6 bg-black overflow-hidden flex flex-col">
       {/* Outer Inset Container */}
       <div className="relative w-full h-full rounded-2xl md:rounded-[2rem] overflow-hidden bg-black">
-        {/* Background Dealership Facade Image with Video & Ambient Light */}
+        {/* Background Dealership Facade Image */}
         <div className="absolute inset-0 w-full h-full">
           <img
             src={heroImgAsset || '/images/main-hero-image.jpeg'}
@@ -45,20 +45,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               (e.target as HTMLImageElement).src = '/images/main-hero-image.jpeg';
             }}
           />
-
-          {/* Ambient Video Blend for subtle moving light reflections */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover mix-blend-screen opacity-20 pointer-events-none"
-          >
-            <source
-              src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
-              type="video/mp4"
-            />
-          </video>
         </div>
 
         {/* Noise overlay */}
