@@ -1,0 +1,6 @@
+{
+  "name": "Jetour Sialkot Motors",
+  "description": "Official authorized 3S dealership for Jetour vehicles in Sialkot, Pakistan. Explore the Jetour Dashing, X70 Plus, and T2 on Airport Road.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

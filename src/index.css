@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #DEDBC8;
+  --font-serif: "Instrument Serif", serif;
+  --font-almarai: "Almarai", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+}
+
+* {
+  font-family: 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Authentic hollow stroked typography for SIALKOT in hero */
+.text-stroke-white {
+  -webkit-text-stroke: 1.8px rgba(255, 255, 255, 0.9);
+  color: transparent;
+}
+
+@media (max-width: 640px) {
+  .text-stroke-white {
+    -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.9);
+  }
+}
+
+body {
+  background-color: #000000;
+  color: #E1E0CC;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom SVG Noise Texture Utilities */
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter2)'/%3E%3C/svg%3E");
+}
